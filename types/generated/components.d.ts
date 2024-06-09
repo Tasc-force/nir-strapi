@@ -7,8 +7,11 @@ export interface UserUsers extends Schema.Component {
     description: '';
   };
   attributes: {
-    email: Attribute.Email;
-    password: Attribute.String;
+    email: Attribute.Email & Attribute.Required;
+    password: Attribute.String & Attribute.Required;
+    username: Attribute.String & Attribute.Required;
+    photo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    cafedra: Attribute.String & Attribute.Required;
   };
 }
 
