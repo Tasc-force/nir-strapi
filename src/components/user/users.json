@@ -6,11 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "pass": {
-      "type": "password"
-    },
     "email": {
       "type": "email"
+    },
+    "password": {
+      "type": "string"
     }
   }
 }

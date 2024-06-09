@@ -7,8 +7,8 @@ export interface UserUsers extends Schema.Component {
     description: '';
   };
   attributes: {
-    pass: Attribute.Password;
     email: Attribute.Email;
+    password: Attribute.String;
   };
 }
 
